@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "SocialBlocker",
+  "version": "1.0",
+
+  "description": "Redirects social sites that are restricted.",
+
+  "icons": {
+    "48": "icons/SocialBlocker.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*","*://*.youtube.com/*"],
+      "js": ["SocialBlocker.js"]
+    }
+  ]
+
+}
